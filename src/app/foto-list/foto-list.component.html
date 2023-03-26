@@ -1,0 +1,11 @@
+<div style="display: flex; flex-wrap: wrap; gap: 1em; max-width: 500px; margin: 0 auto;">
+    <mat-card *ngFor="let f of fotos" style="width: 150px;">
+        <a href="{{f.url}}">
+            <img mat-card-image src="{{f.thumbnailUrl}}">
+        </a>
+
+        <mat-card-content>
+            <p>{{f.title}}</p>
+        </mat-card-content>
+    </mat-card>
+</div>
